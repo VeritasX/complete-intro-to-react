@@ -1,37 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
 <head>
-	<meta charset="UTF-8">
-	<title>svideo</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/public/style.css">
 </head>
+
 <body>
 	<div id="app"></div>
-	<script src="node_modules/react/dist/react.js"></script>
-	<script src="node_modules/react-dom/dist/react-dom.js"></script>
-	<script>
-		const ce = React.createElement
-
-		const MyTitle = function (props) {
-			return (
-				ce('div', null,
-					ce('h1', { style: { color: props.color } }, props.title)
-				)
-			)
-		}
-
-		const MyFirstComponent = function () {
-			return ce('div', { id: 'my-first-component' },
-				ce(MyTitle, { title: 'Game of Thrones', color: 'YellowGreen' }),
-				ce(MyTitle, { title: 'Stranger Things', color: 'GreenYellow' }),
-				ce(MyTitle, { title: 'Rick and Morty', color: 'LimeGreen' }),
-				ce(MyTitle, { title: 'Silicon Valley', color: 'peru' })
-			)
-		}
-
-		ReactDOM.render(
-			ce(MyFirstComponent),
-			document.getElementById('app')
-		)
-	</script>
+	<script src="/public/bundle.js"></script>
 </body>
+
 </html>
